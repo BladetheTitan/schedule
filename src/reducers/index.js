@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import courses from './coursesreducer'
 
 const rootReducer = combineReducers({
-    Courses
+    courses
 });
 
 export default rootReducer;
