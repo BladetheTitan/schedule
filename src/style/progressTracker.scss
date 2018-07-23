@@ -1,4 +1,6 @@
 .progress-tracker {
+    grid-column: progress-s/progress-e;
+    
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 76px;
