@@ -5,7 +5,7 @@ export default function(state = [], action) {
         case FETCH_COURSES:
             return [
                 ...state,
-                action.payload
+                ...action.payload
             ];
         default:
             return state;
