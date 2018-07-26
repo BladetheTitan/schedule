@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-rows: repeat(auto-fit, 1fr);
-    background-color: cornflowerblue;
     
     &__title-check {
         grid-row: 1/2;
@@ -16,5 +15,10 @@
     }
     &__description {
         grid-row: 2/3;
+    }
+}
+.library-course {
+    &:hover {
+        
     }
 }
