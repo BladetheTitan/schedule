@@ -20,7 +20,7 @@ class LibraryCourse extends Component {
     }
     
     handleCallback = function(status) {
-        let height = this.state.height == 0 ? 80 : 0;
+        let height = this.state.height == 0 ? 'auto' : 0;
         if(!status) {
             document.getElementById(this.id).classList.add('library-course-selected');
             height = 100
@@ -39,10 +39,9 @@ class LibraryCourse extends Component {
         return (
             <div id={this.id} className="library-course">
                 <div className="library-course__title-check">
-                    <label className="library-course__title">{ this.props.title }</label>
+                    <div className="library-course__title">{ this.props.title }</div>
                     { Icon('fas fa-check', 'library-course__icon') }
                 </div>
-                <div className="library-course__line"></div>
                 <Arrow callback={status => this.handleCallback(status)}
                 id={this.props.id} 
                 className="library-course__arrow"
